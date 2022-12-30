@@ -1,0 +1,45 @@
+.card{
+display: flex;
+flex-direction: column;
+position: absolute;
+justify-content: end;
+align-items: center;
+text-align: center;
+background: rgba(255, 255, 255, 0.26);
+border: 7px solid var(--orangeCard);
+border-radius: 30px;
+height: 22rem;
+width: 20rem;
+box-shadow: var(--boxShadow);
+border-radius: 20px;
+padding: 2rem;
+gap: 1rem;
+}
+
+.card span:nth-of-type(1){
+    font-size: 2rem;
+}
+
+.card p{
+    font-size: 1.12rem;
+    color: grey;
+}
+
+.card >:last-child{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: rgb(88, 88, 224);
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.9rem;
+}
+.card>img{
+    transform: scale(0.7);
+}
+
+@media screen and (max-width:480px){
+    .card{
+        width: auto;
+    }
+}
