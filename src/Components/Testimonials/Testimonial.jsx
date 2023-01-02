@@ -1,68 +1,64 @@
 import React from "react";
 import "./Testimonial.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import profile1 from '../../images/profile1.jpg'
-import profile2 from '../../images/profile2.jpg'
-import profile3 from '../../images/profile3.jpg'
-import profile4 from '../../images/profile4.jpg'
-import {Pagination} from 'swiper'
-import 'swiper/css/pagination'
-import 'swiper/css'
+import "swiper/css";
 
+import { Pagination } from "swiper";
+import "swiper/css/pagination";
+import profilePic1 from "../../images/profile1.jpg";
+import profilePic2 from "../../images/profile2.jpg";
+import profilePic3 from "../../images/profile3.jpg";
+import profilePic4 from "../../images/profile4.jpg";
 
 const Testimonial = () => {
-
-const clients =[
-  {
-  img: profile1,
-  review:
-  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nemo incidunt aliquam laudantium inventore quaerat necessitatibus error, quam distinctio asperiores.',
-},
-{
-  img: profile2,
-  review:
-  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nemo incidunt aliquam laudantium inventore quaerat necessitatibus error, quam distinctio asperiores.",
-},
-{
-  img: profile3,
-  review:
-  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nemo incidunt aliquam laudantium inventore quaerat necessitatibus error, quam distinctio asperiores.",
-},
-{
-  img: profile4,
-  review:
-  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur nemo incidunt aliquam laudantium inventore quaerat necessitatibus error, quam distinctio asperiores.",
-}
-]
-
+  const clients = [
+    {
+      img: profilePic1,
+      review:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+    },
+    {
+      img: profilePic2,
+      review:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+    },
+    {
+      img: profilePic3,
+      review:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+    },
+    {
+      img: profilePic4,
+      review:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+    },
+  ];
 
   return (
-    <div className="t-wrapper" id='Testimonials'>
+    <div className="t-wrapper" id="testimonial">
       <div className="t-heading">
-        <span>Clients always get</span>
-        <span>Exceptional Work</span>
+        <span>Clients always get </span>
+        <span>Exceptional Work </span>
         <span>from me...</span>
+      <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
+      <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
 
-        <div className="blur t-blur1" style={{ background: "#8d2fc8" }}></div>
-        <div className="blur t-blur2" style={{ background: "#0bcff7" }}></div>
       </div>
-
-      {/* slider */}
       <Swiper
-      modules={[Pagination]}
-      slidesPerView={1}
-      pagination={{clickable:true}}
+        // install Swiper modules
+        modules={[Pagination]}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
       >
-        
-        {clients.map((client,index)=>{
-          return(
+        {clients.map((client, index) => {
+          return (
             <SwiperSlide key={index}>
               <div className="testimonial">
-             <img src={client.img} alt="" />
-             <span>{client.review}</span>
-             </div>
+                <img src={client.img} alt="" />
+                <span>{client.review}</span>
+              </div>
             </SwiperSlide>
-          )
+          );
         })}
       </Swiper>
     </div>

@@ -1,61 +1,74 @@
-import React from "react";
 import "./Works.css";
 import Upwork from "../../images/Upwork.png";
 import Fiverr from "../../images/fiverr.png";
 import Amazon from "../../images/amazon.png";
 import Shopify from "../../images/Shopify.png";
 import Facebook from "../../images/Facebook.png";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
+import {Link} from 'react-scroll'
 const Works = () => {
+  // context
+  
+
+  // transition
   return (
-    <div className="works">
+    <div className="works" id="works">
       {/* left side */}
-      <div className="s-left">
-        <h1>Works for ALl these </h1>
-        <span>Brands & Clients</span>
-        <p>
-          Website design and development: I can create visually appealing and
-          user-friendly websites that are optimized for different devices and
-          platforms.{" "}
-        </p>
-        <br />
-        <p>
-          Server-side development: Full stack developers can work on the
-          back-end of web development, including server-side scripting, database
-          management, and server configuration.
-        </p>
-        <button className="button s-button">Download CV</button>
+      <div className="w-left">
+        <div className="awesome">
+          {/* dark Mode */}
+          <span>
+            Works for All these
+          </span>
+          <span>Brands & Clients</span>
+          <spane>
+            Lorem ispum is simpley dummy text of printing of printing Lorem
+            <br />
+            ispum is simpley dummy text of printingLorem ispum is simpley dummy
+            text
+            <br />
+            y dummy text of printingLorem
+            <br />
+            ispum is simpley dummy text of printing
+          </spane>
+          <Link to="contact" smooth={true} spy={true}>
+            <button className="button s-button">Hire Me</button>
+          </Link>
+          <div
+            className="blur s-blur1"
+            style={{ background: "#ABF1FF94" }}
+          ></div>
+        </div>
+
+        {/* right side */}
       </div>
-      {/* right side */}
-
       <div className="w-right">
-
-        <motion.div 
-        initial={{rotate:45}}
-        whileInView={{rotate:0}}
-        viewport={{margin:"-40px"}}
-        transition={{duration:4,type:'spring'}}
-        className="w-mainCircle">
-            <div className="w-secCircle">
-              <img src={Upwork} alt="" />  
-            </div>
-            <div className="w-secCircle">
-              <img src={Fiverr} alt="" />  
-            </div>
-            <div className="w-secCircle">
-              <img src={Amazon} alt="" />  
-            </div>
-            <div className="w-secCircle">
-              <img src={Shopify} alt="" />  
-            </div>
-            <div className="w-secCircle">
-              <img src={Facebook} alt="" />  
-            </div>
+        <motion.div
+          initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          viewport={{ margin: "-40px" }}
+          transition={{ duration: 3.5, type: "spring" }}
+          className="w-mainCircle"
+        >
+          <div className="w-secCircle">
+            <img src={Upwork} alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img src={Fiverr} alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img src={Amazon} alt="" />
+          </div>{" "}
+          <div className="w-secCircle">
+            <img src={Shopify} alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img src={Facebook} alt="" />
+          </div>
         </motion.div>
-
-        {/* background circle */}
-        <div className="w-backcircle blueCircle"></div>
-        <div className="w-backcircle yellowCircle"></div>
+        {/* background Circles */}
+        <div className="w-backCircle blueCircle"></div>
+        <div className="w-backCircle yellowCircle"></div>
       </div>
     </div>
   );

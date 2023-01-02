@@ -22,33 +22,36 @@ const Contact = () => {
     };
 
 
-  return (
-    <div className="contact-form">
-{/* left side */}
-      <div className="c-left">
-        <div className="w-contact">
-          <h1>Get in Touch</h1>
-          <span>Contact me</span>
+    return (
+      <div className="contact-form" id="contact">
+        {/* left side copy and paste from work section */}
+        <div className="w-left">
+          <div className="awesome">
+            {/* darkMode */}
+            <span>Get in Touch</span>
+            <span>Contact me</span>
+            <div
+              className="blur s-blur1"
+              style={{ background: "#ABF1FF94" }}
+            ></div>
+          </div>
         </div>
-
-        
-        <div className="blur c-blur1" style={{ background: "#0bcff7" }}></div>
-      </div>
-
-{/* right side */}
-       <div className="c-right">
-        <form ref={form} onSubmit ={sendEmail}>
-            <input type="text" name="user_name" className="'user" placeholder="Name"/>
-            <input type="text" name="user_email" className="'user" placeholder="Email"/>
-            <textarea name="message" className="user" placeholder="Message"></textarea>
-            <input type="submit" value='Send' className="button" />
+        {/* right side form */}
+        <div className="c-right">
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" className="user"  placeholder="Name"/>
+            <input type="email" name="user_email" className="user" placeholder="Email"/>
+            <textarea name="message" className="user" placeholder="Message"/>
+            <input type="submit" value="Send" className="button"/>
             <span>{done && "Thanks for Contacting me"}</span>
-            <div className="blur c-blur2" style={{ background: "#8d2fc8" }}></div>
-        </form>
-       </div>
-
-    </div>
-  );
-};
-
-export default Contact;
+            <div
+              className="blur c-blur1"
+              style={{ background: "var(--purple)" }}
+            ></div>
+          </form>
+        </div>
+      </div>
+    );
+  };
+  
+  export default Contact;
