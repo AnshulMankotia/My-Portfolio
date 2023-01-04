@@ -11,6 +11,8 @@
 }
 .t-heading{
     align-items: center;
+    margin-bottom: -7rem;
+
 }
 .t-heading>*{
     font-size: 4rem;
@@ -21,12 +23,12 @@
 }
 
 .t-blur1{
-    left: 38rem;
-    top: 16rem;
+    left: 14rem;
+    top: 5rem;
 }
 .t-blur2{
-    top: 9rem;
-    left: 0;
+    top: 26rem;
+    left: 44rem;
 }
 .testimonial{
     display: flex;
@@ -104,6 +106,9 @@
     .t-heading>*{
         font-size: 2rem;
     }
+    .t-heading{
+        margin-bottom: 0rem;
+    }
     
 }
 
@@ -133,5 +138,8 @@
     }
     .t-heading>*{
         font-size: 2rem;
+    }
+    .t-heading{
+        margin-bottom: 0rem;
     }
 }

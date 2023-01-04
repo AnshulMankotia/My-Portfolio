@@ -1,7 +1,7 @@
 .works {
   padding: 0 3rem 0 3rem;
   display: flex;
-  height: 90vh;
+  min-height: 90vh;
   margin-top: 4rem;
   align-items: center;
   justify-content: center;
@@ -13,9 +13,7 @@
     flex-direction: column;
     position: relative;
   }
-  .w-left .awesome{
-    align-items: center;
-  }
+  
   
   .awesome > :nth-child(1) {
     color: var(--black);

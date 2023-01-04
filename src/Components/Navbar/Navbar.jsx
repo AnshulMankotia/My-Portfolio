@@ -1,12 +1,13 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import Mobilenav from "../Mobilenav/Mobilenav";
 const navbar = () => {
   return (
     <div className="n-wrapper" id="Navbar">
       {/* left */}
       <div className="n-left">
-        <div className="n-name">Anshul</div>
+        <div className="n-name">Anshul.</div>
       </div>
       {/* right */}
       <div className="n-right">
@@ -41,11 +42,13 @@ const navbar = () => {
         </div>
         <Link to="contact" spy={true} smooth={true}>
         <button className="button n-button">Contact</button>
-         
-        {/* menu bar */}
         </Link>
-     
       </div>
+
+      <div className= "mobnav">
+        <Mobilenav/>
+         </div>
+         
     </div>
   );
 };
