@@ -24,8 +24,8 @@
 }
 
 .c-right .user{
-    width: 20rem;
-    height: 2rem;
+    width: 28rem;
+    height: 4rem;
     padding: 0.3em;
     outline: none;
     border: 2px solid var(--orange);
@@ -34,7 +34,7 @@
 }
 
 textarea{
-    height: 4rem!important;
+    height: 7rem!important;
 }
 
 .c-blur1{
@@ -42,7 +42,7 @@ textarea{
     left: 8rem;
 }
 
-
+/* for moblie */
 @media (min-width:375px) and (max-width:680px) {
     .contact-form{
         padding: 0;
@@ -50,10 +50,30 @@ textarea{
         gap: 5rem;
         height: 40rem;
         margin-top: -8rem;
-        text-align: center;
+        align-items: center;
     }
     .c-right .user{
         width: 16rem;
     }
+    textarea{
+        height: 4rem!important;
+    }
 }
 
+/* for tablet  */
+@media (min-width:681px) and (max-width:1181px){
+    .contact-form{
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+        margin-top: -8rem;
+        align-items: center;
+    }
+    .c-right .user{
+        width: 30rem;
+    }
+    textarea{
+        height: 6rem!important;
+    }
+}

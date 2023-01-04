@@ -22,9 +22,7 @@ const Services = () => {
         <span>My Awesome</span>
         <span>services</span>
         <span>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
+        My expertise includes HTML, CSS, JavaScript, React.js,<br /> Node.js, Express.js, Mongo-DB, etc. I am capable to learn new agile<br /> software technologies and also provide my best services and delivered <br />projects on time.
         </span>
           <button className="button s-button">Download CV</button>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>

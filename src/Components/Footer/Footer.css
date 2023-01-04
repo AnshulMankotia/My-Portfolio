@@ -27,8 +27,34 @@
     gap: 3rem;
 }
 
-
+/* for mobile  */
 @media (min-width:375px) and (max-width:680px) {
+    .footer {
+        margin-top: -7rem;
+        min-height: 49vh;
+    }
+
+    .f-content{
+        left: 50%;
+         top: 30%;
+    }
+
+    .footer img{
+        height: 49vh;
+    }
+    .f-content span {
+        font-size: 1.3rem;
+    }
+    .f-icons{
+        display: flex;
+        gap: 3rem;
+        width: 18rem;
+    }
+}
+
+
+/* for tablet  */
+@media (min-width:681px) and (max-width:1181px){
     .footer {
         margin-top: -7rem;
         min-height: 49vh;

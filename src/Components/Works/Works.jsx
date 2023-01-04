@@ -5,10 +5,9 @@ import Amazon from "../../images/amazon.png";
 import Shopify from "../../images/Shopify.png";
 import Facebook from "../../images/Facebook.png";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 const Works = () => {
   // context
-  
 
   // transition
   return (
@@ -17,20 +16,15 @@ const Works = () => {
       <div className="w-left">
         <div className="awesome">
           {/* dark Mode */}
-          <span>
-            Works for All these
-          </span>
+          <span>Works for All these</span>
           <span>Brands & Clients</span>
-          <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
-            <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
-            <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
-          </spane>
+          <span>
+            Developing a website or application that reflects the brand's  <br />
+            identity and values Building custom features and functionality that <br />
+            help to differentiate the brand from its competitors Creating a <br />
+            seamless and cohesive user experience across all brand touchpoints, <br />
+            including web, mobile, and other channels
+          </span>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
           </Link>

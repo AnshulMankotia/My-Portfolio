@@ -1,7 +1,6 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-
 const navbar = () => {
   return (
     <div className="n-wrapper" id="Navbar">
@@ -42,8 +41,10 @@ const navbar = () => {
         </div>
         <Link to="contact" spy={true} smooth={true}>
         <button className="button n-button">Contact</button>
-        
+         
+        {/* menu bar */}
         </Link>
+     
       </div>
     </div>
   );

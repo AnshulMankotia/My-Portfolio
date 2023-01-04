@@ -29,7 +29,9 @@ const Intro = () => {
           <span>Anshul Mankotia</span>
           <span>
             Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+            and development, producting the Quality work.
+            I am able to design and develope complete web solutions that meet the needs of my clients.
+            Whether it's building a new application from the ground up or optimizing and maintaining an existing one, I have the skills and expertise to get the job done.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
@@ -73,7 +75,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Web" text2="Designing"/>
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

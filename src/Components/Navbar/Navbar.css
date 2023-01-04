@@ -60,4 +60,15 @@
     }
 }
 
+
+
 /* media query for tablet design */
+@media (min-width:681px) and (max-width:1181px){
+  .n-list {
+    display: none;
+  }
+  .n-button {
+    flex: 2 1;
+    display: none;
+}
+}

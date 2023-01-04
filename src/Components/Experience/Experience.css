@@ -46,6 +46,15 @@
         transform: scale(0.52);
         margin-top: 26rem;
         margin-bottom: 0;
-        padding: 12rem 0rem;
+        padding: 14rem 0rem;
+    }
+}
+
+@media (min-width:681px) and (max-width:1181px) {
+    .experience {
+        transform: scale(1);
+        margin-top: 26rem;
+        margin-bottom: 0;
+        padding: 20rem 0rem;
     }
 }

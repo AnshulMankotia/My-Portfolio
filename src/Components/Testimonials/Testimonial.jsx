@@ -15,22 +15,22 @@ const Testimonial = () => {
     {
       img: profilePic1,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+      "I have had the pleasure of working with [Full Stack Developer] on multiple projects and have always been impressed with their technical skills and ability to deliver high-quality code on tight deadlines. They are a true full stack developer, with expertise in both front-end and back-end technologies, and are able to understand and solve complex problems with ease. I highly recommend [Full Stack Developer] for any project requiring a reliable and talented developer.",
     },
     {
       img: profilePic2,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+      "I have worked with many full stack developers over the years, but [Full Stack Developer] stands out as one of the best. They have a rare combination of technical expertise and problem-solving skills that make them an asset to any team. Whether it's working on the front-end or back-end of a project, [Full Stack Developer] is always able to deliver high-quality code that meets the project's requirements. I highly recommend [Full Stack Developer] for any project that requires a talented and reliable developer.",
     },
     {
       img: profilePic3,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+      "As a project manager, it's essential to have a full stack developer on the team who can handle any task that comes their way. [Full Stack Developer] has consistently impressed me with their ability to dive into any project and quickly understand the requirements and technical complexities. They have a strong understanding of both front-end and back-end technologies and are able to deliver high-quality code that meets the project's needs. I highly recommend [Full Stack Developer] for any project that requires a versatile and skilled developer.",
     },
     {
       img: profilePic4,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+      "I have worked with [MERN Developer] on several projects and have always been impressed by their technical skills and attention to detail. They have a strong understanding of the MERN stack and are able to develop high-quality web applications efficiently. In addition to their technical abilities, [MERN Developer] is also a great team player and always willing to share their knowledge with the rest of the team. I highly recommend them for any project that requires MERN development.",
     },
   ];
 

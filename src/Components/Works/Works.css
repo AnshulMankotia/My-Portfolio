@@ -13,6 +13,9 @@
     flex-direction: column;
     position: relative;
   }
+  .w-left .awesome{
+    align-items: center;
+  }
   
   .awesome > :nth-child(1) {
     color: var(--black);
@@ -113,6 +116,7 @@
     top: 8rem;
   }
   
+  /* for mobile  */
   @media (min-width:375px) and (max-width:680px){
     .works {
       flex-direction: column;
@@ -134,14 +138,55 @@
     .w-backCircle{
       left: 8rem!important;
     }
-    .awesome > span:nth-child(1) {
-      font-size: 1.5rem;
+    .w-left .awesome > span:nth-child(1) {
+      font-size: 3rem;
     }
-    .awesome > span:nth-child(2) {
-      font-size: 1.5rem;
+    .w-left .awesome > span:nth-child(2) {
+      font-size: 3rem;
     }
-    .awesome > span:nth-child(3) {
-      font-size: 1.5rem;
+    .w-left .awesome > span:nth-child(3) {
+      font-size: 1rem;
+    }
+    br{
+      display: none;
+    }
+  
+  }
+
+
+  /* for tablet  */
+  @media (min-width:681px) and (max-width:1181px){
+    .works {
+      flex-direction: column;
+      padding: 0;
+      gap: 5rem;
+      height: 43rem;
+      text-align: center;
+    }
+  
+    .w-right {
+      display: flex;
+      align-items: flex-start;
+      justify-content:start;
+      transform: scale(0.7);
+    }
+    .w-mainCircle{
+      position: static;
+    }
+    .w-backCircle{
+      left: 8rem!important;
+    }
+    .w-left .awesome > span:nth-child(1) {
+      font-size: 3rem;
+    }
+    .w-left .awesome > span:nth-child(2) {
+      font-size: 3rem;
+    }
+    .w-left .awesome > span:nth-child(3) {
+      font-size: 1rem;
+    }
+    br{
+      display: none;
     }
   
   }

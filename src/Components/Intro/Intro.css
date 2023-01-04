@@ -108,7 +108,7 @@
     
       .i-right {
         transform: scale(0.8);
-        left: -3rem;
+        left: -4rem;
       }
       .i-right .blur {
         display: none;
@@ -128,4 +128,34 @@
       }
 }
 
+/* for tablets */
+@media (min-width:681px) and (max-width:1181px){
+  .Intro {
+    flex-direction: row;
+    gap: 7rem;
+    height: 64rem;
+    margin-top: 7rem;
+  }
+
+  .i-right {
+    transform: scale(0.8);
+    left: -9rem;
+  }
+  .i-right .blur {
+    display: none;
+  }
+  .floating-div:nth-of-type(1){
+    /* display: none; */
+    top: -15rem !important;;
+  }
+  .i-name > :nth-child(1) {
+    font-size: 3rem;
+  }
+  .i-name > :nth-child(2) {
+    font-size: 3rem;
+  }
+  .i-name > :nth-child(3) {
+    font-size: 16px;
+  }
+}
 
