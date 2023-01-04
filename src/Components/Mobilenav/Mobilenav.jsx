@@ -30,11 +30,12 @@ const Mobilenav = () => {
         <Link to="testimonial" spy={true} smooth={true} onClick={showNavbar}>
           Testimonial
         </Link>
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}
+        style={{fontSize:'3rem'}}>
           <FaTimes />
         </button>
       </nav>
-      <button className="nav-btn" onClick={showNavbar}>
+      <button className="nav-btn" onClick={showNavbar} style={{fontSize:'3rem'}}>
         <FaBars />
       </button>
     </header>
