@@ -99,7 +99,7 @@ br{
   /* tablet design  */
   @media (min-width:681px) and (max-width:1181px) {
     .services {
-      margin-top: -27vh;
+      margin-top: 0vh;
       flex-direction: column;
       gap: 5rem;
       height: 66rem;
